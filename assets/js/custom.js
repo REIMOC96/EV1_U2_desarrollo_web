@@ -7,8 +7,7 @@ function comp_dat(){
     let Carrera = document.querySelector("#Carrera").value;
     let Edad = document.querySelector("#edad").value;
     let Msj = document.querySelector("#txt_ar").value;
-    let valid = false;
-    var conf = confirm("¿los datos son correctos?")
+    let chek = document.getElementById("formulario");
     //vamos con lo chungo D:<
     //tuve que leer muchisima documentacion pa esto, pero entendi muchisimo O.O
     //comprobamos los numeros en el nombre
@@ -85,8 +84,8 @@ function comp_dat(){
             }
         else if(!/^([1-9])*/.test(Msj))
         alert("porfavor ingrese una consulta o mensaje valido");
+            
         }
-
     // lo del try - error, me sirvio muchisimo, usar mas seguido. 
     catch {
         alert("algo malio sal")
